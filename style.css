@@ -167,7 +167,7 @@ span.color {
     url(assets/img/pixel-jeff-galaxy-far-far-away.gif);
   background-size: cover no-repeat;
   background-position: center center;
-  height: 1150px;
+  height: auto;
   box-shadow: rgba(58, 2, 41, 0.4) 0rem 0.3125rem,
     rgba(58, 2, 41, 0.3) 0rem 0.625rem, rgba(58, 2, 41, 0.2) 0rem 0.9375rem,
     rgba(58, 2, 41, 0.1) 0rem 1.25rem, rgba(58, 2, 41, 0.05) 0rem 1.5625rem,
@@ -178,7 +178,6 @@ span.color {
 
 .projetos h2 {
   color: #fff;
-  margin: 0% 15%;
   font-size: 50px;
   letter-spacing: 0.625rem;
   padding-top: 5rem;
@@ -190,10 +189,13 @@ span.color {
 }
 
 .container-cards-1,
-.container-cards-2 {
+.container-cards-2,
+.container-cards-3,
+.container-cards-4 {
   margin: 0% 5% 10% 5%;
+  padding: 0% 130px 0% 0%;
 
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
 }
 
@@ -295,6 +297,7 @@ span.color {
   height: 130px;
   width: 200px;
   transition: all 0.5s;
+  margin: 0% -25% 0% 0%;
   border: 5px solid #ffffffaa;
   border-radius: 20px;
   box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
@@ -401,4 +404,34 @@ footer {
 .rodape a:hover {
   color: #962866;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1850px) {
+  .container-cards-1,
+  .container-cards-2,
+  .container-cards-3,
+  .container-cards-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-cards-4 {
+    padding-bottom: 10%;
+  }
+
+  .card-secundario {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .menu {
+    flex: 30%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .projetos h2 {
+    font-size: 37px;
+  }
 }
