@@ -305,8 +305,9 @@ span.color {
 
 .card-secundario:hover {
   height: 220px;
-  background: #ededed66;
+  background: #ededed88;
   transition: all 0.5s ease-in-out;
+  border: transparent;
 }
 
 .card-secundario .header {
