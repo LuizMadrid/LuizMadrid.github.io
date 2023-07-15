@@ -10,16 +10,16 @@
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  background: #454545;
-  background: radial-gradient(
+  /* background: radial-gradient(
     ellipse farthest-corner at center center,
     #454545 40%,
     #231421 100%
-  );
+  ); */
+  background: #ececec;
 }
 
 span.color {
-  color: #962866;
+  color: #ff426f;
 }
 
 .navbar {
@@ -27,6 +27,7 @@ span.color {
   height: 3.75rem;
   width: 100%;
   backdrop-filter: blur(0.4375rem);
+  background-color: #32323236;
   border-bottom: 2px solid rgba(255, 255, 255, 0.082);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1.1875rem 2.375rem,
     rgba(0, 0, 0, 0.22) 0px 0.9375rem 0.75rem;
@@ -52,14 +53,14 @@ span.color {
 
   letter-spacing: 0.1875rem;
   text-decoration: none;
-  color: #fff;
-  /* color: #323232; */
+  /* color: #fff; */
+  color: #323232;
   font-weight: 600;
   font-size: 1.25rem;
 }
 
 .logo a:hover {
-  color: #962866;
+  color: #ff426f;
   font-weight: 900;
 }
 
@@ -83,24 +84,19 @@ span.color {
 }
 
 .menu a {
-  color: #fff;
-  /* color: #323232; */
-  font-size: 13px;
+  color: #323232;
+  font-size: 0.8125rem;
   font-weight: 500;
-  padding: 0.75rem 5px;
+  padding: 0.5rem 0.5rem;
   margin: 0.125rem;
   letter-spacing: 0.25rem;
   text-decoration: none;
 }
 .menu a:hover {
-  border-top: solid;
-  border-width: 0.3125rem;
-  border-image: linear-gradient(90deg, #96286666, #962866aa, #962866ff) 1;
-  transition: 0.3s ease-in-out;
-}
-
-.menu a:hover i {
-  color: #962866;
+  border-bottom: 3px solid #ff426faa;
+  background-color: #45454517;
+  border-radius: 3px;
+  transition: 0.22s ease-in-out;
 }
 
 /* ///////////// */
@@ -112,9 +108,12 @@ span.color {
   align-items: center;
 
   height: 62.5rem;
-  background: linear-gradient(to top, rgb(17, 9, 14), transparent) center center /
-      cover no-repeat,
-    url(assets/img/Wallpaper\ vector\ 3840x2400.jpg);
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.55),
+      rgba(245, 245, 245, 0.8)
+    ),
+    center center / cover no-repeat, url(assets/img/common-bg.svg);
   background-size: cover no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -128,19 +127,15 @@ span.color {
 
 /* //////// */
 
-.transition-shadow {
-  border: 10px solid transparent;
-  box-shadow: rgba(58, 50, 55, 0.4) 0rem 0.3125rem,
-    rgba(58, 50, 55, 0.3) 0rem 0.625rem, rgba(58, 50, 55, 0.2) 0rem 0.9375rem,
-    rgba(58, 50, 55, 0.1) 0rem 1.25rem, rgba(58, 50, 55, 0.05) 0rem 1.5625rem;
-  transform: rotate(180deg);
-}
-
-/* //////// */
-
 .sobre-mim {
   height: 62.5rem;
   width: 100%;
+  border: 10px solid transparent;
+  box-shadow: rgba(220, 220, 220, 0.4) 0rem -0.3125rem,
+    rgba(220, 220, 220, 0.3) 0rem -0.625rem,
+    rgba(220, 220, 220, 0.2) 0rem -0.9375rem,
+    rgba(220, 220, 220, 0.1) 0rem -1.25rem,
+    rgba(220, 220, 220, 0.05) 0rem -1.5625rem;
 
   display: flex;
   align-items: center;
@@ -154,34 +149,34 @@ span.color {
 }
 
 /* //////// */
-
-.projetos {
-  /* background-color: #5d565a; */
-  background: linear-gradient(
-        to top,
-        rgb(15, 9, 17),
-        rgba(15, 9, 17, 0.52),
-        rgb(15, 9, 17)
-      )
-      center center / cover,
-    url(assets/img/pixel-jeff-galaxy-far-far-away.gif);
-  background-size: cover no-repeat;
-  background-position: center center;
-  height: auto;
-  box-shadow: rgba(58, 2, 41, 0.4) 0rem 0.3125rem,
-    rgba(58, 2, 41, 0.3) 0rem 0.625rem, rgba(58, 2, 41, 0.2) 0rem 0.9375rem,
-    rgba(58, 2, 41, 0.1) 0rem 1.25rem, rgba(58, 2, 41, 0.05) 0rem 1.5625rem,
-    rgba(58, 2, 41, 0.4) 0rem -0.3125rem, rgba(58, 2, 41, 0.3) 0rem -0.625rem,
-    rgba(58, 2, 41, 0.2) 0rem -0.9375rem, rgba(58, 2, 41, 0.1) 0rem -1.25rem,
-    rgba(58, 2, 41, 0.05) 0rem -1.5625rem;
+.background-box {
+  position: relative;
+  border: 2px solid none;
+  margin: 0% 35% -3% 2%;
+  padding: 40px;
+  background-color: #9c4eff;
+  background: linear-gradient(90deg, #9c4eff, #ff426f);
+  border-radius: 12px;
 }
 
-.projetos h2 {
+.projetos {
+  background: linear-gradient(-45deg, #18123edd, #0a0722, #07051f, #03000e);
+  height: auto;
+  padding-top: 10%;
+  box-shadow: rgba(24, 18, 62, 0.4) 0rem 0.3125rem,
+    rgba(24, 18, 62, 0.3) 0rem 0.625rem, rgba(24, 18, 62, 0.2) 0rem 0.9375rem,
+    rgba(24, 18, 62, 0.1) 0rem 1.25rem, rgba(24, 18, 62, 0.05) 0rem 1.5625rem,
+    rgba(24, 18, 62, 0.4) 0rem -0.3125rem, rgba(24, 18, 62, 0.3) 0rem -0.625rem,
+    rgba(24, 18, 62, 0.2) 0rem -0.9375rem, rgba(24, 18, 62, 0.1) 0rem -1.25rem,
+    rgba(24, 18, 62, 0.05) 0rem -1.5625rem;
+}
+
+.background-box h2 {
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 0.625rem;
-  padding-top: 5rem;
-  margin-bottom: 5rem;
+  /* padding-top: 5rem; */
+  /* margin-bottom: 5rem; */
 
   display: flex;
   justify-content: center;
@@ -189,14 +184,15 @@ span.color {
 }
 
 .container-cards-1,
-.container-cards-2,
-.container-cards-3,
-.container-cards-4 {
-  margin: 0% 5% 10% 5%;
-  padding: 0% 130px 0% 0%;
+.container-cards-2 {
+  margin: 0% 16.5% 1% 16.5%;
 
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
+}
+
+.container-cards-2 {
+  padding-bottom: 120px;
 }
 
 /* Estilização dos CARD's */
@@ -204,7 +200,6 @@ span.color {
 /* Card principal (PROJETO) */
 
 .card-projeto {
-  margin: 0% -10% 0% 0%;
   position: relative;
   width: 400px;
   aspect-ratio: 16/9;
@@ -232,7 +227,7 @@ span.color {
 
 .card-projeto:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 80px rgba(255, 255, 255, 0.6);
 }
 
 .card_content {
@@ -266,15 +261,22 @@ span.color {
 
 .card_description {
   text-indent: 1rem;
-  margin: 10px 0 70px;
+  margin: 10px 0 12px;
   font-size: 12px;
   color: #777;
   line-height: 1.4;
 }
 
+.card_content .skills {
+  font-size: 30px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
 .card_content a {
   text-decoration: none;
-  justify-content: space-between;
+  margin-left: 35px;
 }
 
 .card_link {
@@ -291,65 +293,8 @@ span.color {
   border: 1px solid #777;
 }
 
-/* Card secundario (FERRAMENTAS) */
-
-.card-secundario {
-  height: 130px;
-  width: 200px;
-  transition: all 0.5s;
-  margin: 0% -25% 0% 0%;
-  border: 5px solid #ffffffaa;
-  border-radius: 20px;
-  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-    -15px -15px 30px rgba(60, 60, 60, 0.082);
-  text-align: center;
-  overflow: hidden;
-}
-
-.card-secundario:hover {
-  height: 220px;
-  background: #ededed88;
-  transition: all 0.5s ease-in-out;
-  border: transparent;
-}
-
-.card-secundario .header {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f2f2f2;
-
-  margin-bottom: 16px;
-}
-
-.simbolo-box {
-  font-size: 50px;
-  color: #962866;
-}
-
-.title {
-  font-size: 1.25rem;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 4px 0 14px 0;
-  transition: all 0.5s;
-  color: #454545;
-}
-
-.skills {
-  display: block;
-  margin: 0px 18px;
-}
-
-.skills img {
-  color: #454545;
-  height: 35px;
-  padding: 2%;
-  cursor: pointer;
-  transition: all 0.5s;
+.card-content a:hover {
+  color: #ff426f;
 }
 
 /* //////// */
@@ -406,32 +351,72 @@ footer {
   text-decoration: none;
 }
 
+/* /////////// */
+
 @media screen and (max-width: 1850px) {
+  .card-projeto {
+    margin: 20px;
+    padding: 150px;
+  }
+
   .container-cards-1,
-  .container-cards-2,
-  .container-cards-3,
-  .container-cards-4 {
+  .container-cards-2 {
     display: flex;
-    justify-content: center;
+    flex-flow: row;
+    align-items: center;
   }
 
-  .container-cards-4 {
-    padding-bottom: 10%;
+  .card_description {
+    margin: 10px 0 35px;
+    font-size: 15px;
   }
 
-  .card-secundario {
-    margin-left: 200px;
+  .card_content .skills {
+    margin-bottom: 45px;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .menu {
-    flex: 30%;
+    flex: 40%;
+  }
+
+  .container-cards-1,
+  .container-cards-2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 1160px) {
   .projetos h2 {
     font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .projetos h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .menu {
+    display: none;
+  }
+
+  .logo a {
+    justify-content: center;
+  }
+
+  .projetos h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projetos h2 {
+    font-size: 20px;
   }
 }
