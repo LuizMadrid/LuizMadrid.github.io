@@ -14,38 +14,41 @@
       src="https://kit.fontawesome.com/af95fc2e99.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <!-- ↓↓ NAVBAR -->
-      <nav class="navbar">
+      <header class="menu">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#Inicial">
+              <img
+                src="assets/img/LUIZ MADRID LOGO NOVO (letra preta).png"
+                alt="Logo Madrid-Dev"
+              /> Portfólio
+            </a>
+          </div>
+          <div class="aside-menu">
+            <ul>
+              <li>
+                <a href="#Sobre-mim">Sobre Mim</a>
+                <a href="#Projetos">Projetos</a>
+                <a href="#Habilidades">Skills</a>
+                <a href="#Contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- ↑↑ NAVBAR -->
+      <!-- ↓↓ Página Inicial -->
+      <section class="headline" id="Inicial">
         <a href="#Inicial" class="btn-top">
           <i class="fa-solid fa-arrow-up"></i>
         </a>
-        <div class="logo">
-          <a href="#Inicial">
-            <img
-              src="assets/img/LUIZ MADRID LOGO NOVO (letra preta).png"
-              alt="Logo Madrid-Dev"
-            /> Portfólio
-          </a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="#Sobre-mim">Sobre Mim</a>
-              <a href="#Projetos">Projetos</a>
-              <a href="#Habilidades">Skills</a>
-              <a href="#Contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- ↑↑ NAVBAR -->
-      <!-- ↓↓ Página Inicial -->
-      <header class="headline" id="Inicial">
         <div class="inicial">
-          <h1><span style="font-size: 50px">Sou</span> Luiz Madrid.</h1>
+          <h1><span style="font-size: 50px">Sou </span>Luiz Madrid.</h1>
           <h2>Desenvolvedor Front-End</h2>
           <div class="social">
             <a
@@ -73,17 +76,24 @@
             </a>
           </div>
           <p id="type">
-            Olá, meu portfólio foi baseado em um estilo minimalista, confira
-            abaixo <br />
-            a sessão sobre mim e alguns dos meus projetos.
+            Olá, é um prazer recebê-lo(a) neste espaço onde compartilho minha
+            <br />
+            jornada profissional e acadêmica. Aqui, você encontrará informações
+            <br />sobre meus projetos, minhas skills e um pouco mais sobre mim.
           </p>
         </div>
-      </header>
+      </section>
+      <!-- ↑↑ Página Inicial -->
 
+      <!-- ↓↓ Página Sobre Mim -->
       <section class="sobre-mim" id="Sobre-mim">
         <h2>Oi</h2>
       </section>
-      <section class="projetos" id="Projetos">
+      <!-- ↑↑ Página Sobre Mim -->
+
+      <!-- ↓↓ Página dos Projetos -->
+      <div id="Projetos" style="padding: 30px"> </div>
+      <section class="projetos">
         <div class="background-box">
           <h2>
             Conheça <span class="color"> alguns </span> dos meus Projetos
@@ -264,12 +274,21 @@
           </div>
         </div>
       </section>
+      <!-- ↑↑ Página dos Projetos -->
+
+      <!-- ↓↓ Página das Habilidades -->
       <section class="habilidades" id="Habilidades">
         <h2>Habilidades</h2>
       </section>
+      <!-- ↑↑ Página das Habilidades -->
+
+      <!-- ↓↓ Página de Contato -->
       <section class="contato" id="Contato">
         <h2>contato</h2>
       </section>
+      <!-- ↑↑ Página de Contato -->
+
+      <!-- ↓↓ Footer -->
       <footer>
         <div class="rodape">
           <img
@@ -312,6 +331,7 @@
           <span style="text-decoration: underline">Luiz Madrid</span>
         </p>
       </footer>
+      <!-- ↑↑ Footer -->
     </div>
   </body>
 </html>
