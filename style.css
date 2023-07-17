@@ -57,7 +57,7 @@ span.color {
   height: 3.75rem;
   width: 100%;
   backdrop-filter: blur(0.4375rem);
-  background-color: #32323236;
+  background: #d4d4d4;
   border-bottom: 2px solid rgba(255, 255, 255, 0.082);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1.1875rem 2.375rem,
     rgba(0, 0, 0, 0.22) 0px 0.9375rem 0.75rem;
