@@ -272,7 +272,8 @@ span.color2 {
 
 .inicial h2 {
   color: #ececec;
-  margin: 0.3125rem 600px 0.3125rem 0.3125rem;
+  margin: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  max-width: 360px;
   padding: 1rem;
   border-radius: 0.9375rem;
   letter-spacing: 0.125rem;
@@ -317,7 +318,7 @@ span.color2 {
   border-radius: 0.3rem;
   padding: 0.1875rem;
   bottom: -1.6875rem;
-  left: -3.2rem;
+  left: -55px;
   opacity: 0;
   display: none;
   transform: translateX(1.25rem);
@@ -327,7 +328,7 @@ span.color2 {
 .social a:hover {
   color: #ff426f;
   transform: scale(1.2);
-  filter: drop-shadow(rgb(255, 66, 111) 0.0625rem 0.0625rem 0.625rem);
+  filter: drop-shadow(#ff426f 0.0625rem 0.0625rem 0.625rem);
   text-decoration: none;
 }
 
@@ -344,6 +345,7 @@ span.color2 {
   font-size: 1.375rem;
   text-indent: 1.25rem;
   line-height: 2.1875rem;
+  max-width: 51.25rem;
 }
 
 #type::after {
@@ -390,31 +392,37 @@ span.color2 {
   margin: 0% 5% 0% 5%;
 
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-flow: row wrap;
   align-items: center;
 }
 
 .sobre-img img {
+  flex: 20%;
+
   height: 600px;
   margin-top: 5rem;
 }
 
 .conteudo-sobre-mim {
-  margin-left: 3.125rem;
+  flex: 70%;
+
+  max-width: 62.5rem;
+  padding-left: 2.1875rem;
 }
 
 .conteudo-sobre-mim h3 {
   font-size: 2.1875rem;
   letter-spacing: 0.1875rem;
   padding-top: 6.875rem;
+  padding-bottom: 0.625rem;
 }
 
 .conteudo-sobre-mim p {
   font-size: 1.125rem;
   text-indent: 1.5625rem;
   line-height: 1.875rem;
-  padding-top: 1.5625rem;
-  margin-right: 16.25rem;
+  padding-top: 0.9375rem;
   text-align: justify;
 }
 
@@ -450,6 +458,7 @@ span.color2 {
   font-size: 2.5rem;
   letter-spacing: 0.625rem;
   padding: 1.5625rem 0px;
+  max-width: 1000px;
   /* margin-bottom: 5rem; */
 
   display: flex;
@@ -705,8 +714,17 @@ footer p {
   }
 }
 @media screen and (max-width: 1680px) {
-  .background-box h2 {
+  .background-box-1 {
+    margin: -3% 0% 0% 5%;
+    padding: 1.25rem;
+  }
+
+  .background-box-2 h2 {
     font-size: 2.1875rem;
+  }
+
+  .sobre-img img {
+    height: 31.25rem;
   }
 
   .card_content a {
@@ -724,10 +742,6 @@ footer p {
 }
 
 @media screen and (max-width: 1560px) {
-  .background-box h2 {
-    font-size: 1.875rem;
-  }
-
   .card_description {
     margin: 0.625rem 0 0.625rem;
   }
@@ -738,7 +752,7 @@ footer p {
 }
 
 @media screen and (max-width: 1440px) {
-  .menu {
+  .aside-menu {
     flex: 40%;
   }
 
@@ -749,8 +763,12 @@ footer p {
     align-items: center;
   }
 
-  .background-box h2 {
-    font-size: 1.5625rem;
+  .background-box-1 {
+    margin: -4% 60% 0% 5%;
+  }
+
+  .sobre-img img {
+    height: 28.125rem;
   }
 
   .card_content a {
@@ -767,34 +785,105 @@ footer p {
   }
 }
 
+@media screen and (max-width: 1270px) {
+  .sobre-mim {
+    justify-content: center;
+  }
+
+  .sobre-img img {
+    height: 34.375rem;
+  }
+
+  .conteudo-sobre-mim {
+    max-width: 62.5rem;
+    padding-left: 0rem;
+    margin-top: -6.875rem;
+  }
+
+  .sobre-mim-container {
+    padding-bottom: 68.75rem;
+  }
+}
+
 @media screen and (max-width: 1160px) {
-  .background-box h2 {
+  .background-box-1 {
+    margin: -5% 0% 0% 5%;
+  }
+
+  .background-box-2 {
+    margin: -6% 0% 0% 5%;
+  }
+
+  .background-box-2 h2 {
     font-size: 2.3125rem;
   }
 }
 
-@media screen and (max-width: 950px) {
-  .background-box h2 {
+@media screen and (max-width: 1070px) {
+  .background-box-2 {
+    margin: -6% 0% 0% 5%;
+    padding: 0.625rem;
+  }
+
+  .background-box-2 h2 {
     font-size: 1.875rem;
   }
 }
 
-@media screen and (max-width: 830px) {
-  .menu {
-    display: none;
+@media screen and (max-width: 950px) {
+  .inicial {
+    margin-top: 15.625rem;
   }
 
-  .logo a {
-    justify-content: center;
-  }
-
-  .background-box h2 {
+  .background-box-2 h2 {
     font-size: 1.5625rem;
   }
 }
 
-@media screen and (max-width: 750px) {
-  .background-box h2 {
+@media screen and (max-width: 830px) {
+  .aside-menu {
+    flex: 80%;
+    text-align: center;
+    margin: 0%;
+    margin-top: 15px;
+    /* display: none; */
+  }
+
+  .logo {
+    padding-top: 0.625rem;
+  }
+
+  .logo a {
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
+    margin: 0%;
+  }
+
+  .menu.sticky {
+    height: 105px;
+  }
+
+  .background-box-1 {
+    margin: -6% 60% 0% 5%;
+  }
+
+  .background-box-2 {
+    margin: -8% 5% 10% 5%;
+  }
+
+  .background-box-2 h2 {
     font-size: 1.25rem;
+    letter-spacing: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .background-box-1 {
+    margin: -7% 40% 0% 5%;
+  }
+
+  .background-box-2 h2 {
+    letter-spacing: 0.3125rem;
   }
 }
