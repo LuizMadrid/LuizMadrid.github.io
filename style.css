@@ -248,7 +248,7 @@ span.color2 {
   height: 62.5rem;
   background: linear-gradient(
       to right,
-      rgba(225, 225, 225, 0.55),
+      rgba(170, 170, 170, 0.55),
       rgba(225, 225, 225, 0.8)
     ),
     center center / cover no-repeat, url(assets/img/common-bg.svg);
