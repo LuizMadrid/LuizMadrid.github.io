@@ -375,21 +375,26 @@ span.color2 {
 
 /* Começo da estilização do sobre mim */
 
-.sobre-mim-container {
-  height: 53.75rem;
+.inicio-shadow {
   border: 10px solid transparent;
   box-shadow: rgba(190, 190, 190, 0.4) 0rem -0.3125rem,
     rgba(190, 190, 190, 0.3) 0rem -0.625rem,
     rgba(190, 190, 190, 0.2) 0rem -0.9375rem,
     rgba(190, 190, 190, 0.1) 0rem -1.25rem,
     rgba(190, 190, 190, 0.05) 0rem -1.5625rem;
+  /* transform: rotate(180deg); */
+}
+
+.sobre-mim-container {
+  height: 53.75rem;
+  margin: 0% 5% 0% 5%;
 }
 
 .sobre-mim-titulo h2 {
   display: flex;
   justify-content: right;
   background: linear-gradient(to top, #9c4effcc 50%, transparent 50%);
-  margin: 2% 5% 0% 5%;
+  margin: 2% 0% 0% 0%;
   max-width: 12.1875rem;
   font-size: 1.875rem;
   padding-bottom: 0.3125rem;
@@ -405,8 +410,6 @@ span.color2 {
 }
 
 .sobre-mim {
-  margin: 0% 5% 0% 5%;
-
   display: flex;
   justify-content: left;
   flex-flow: row wrap;
@@ -416,7 +419,7 @@ span.color2 {
 .sobre-img img {
   flex: 20%;
 
-  height: 600px;
+  height: 550px;
   margin-top: 5rem;
 }
 
@@ -994,11 +997,19 @@ footer p {
   .card_content .skills {
     margin-bottom: 2.8125rem;
   }
+
+  .rodape p {
+    margin-left: -7.5rem;
+  }
 }
 
 @media screen and (max-width: 1270px) {
   .skills-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .rodape p {
+    margin-left: -6.25rem;
   }
 }
 
@@ -1024,6 +1035,10 @@ footer p {
 
   .background-box-2 h2 {
     font-size: 1.875rem;
+  }
+
+  .rodape p {
+    margin-left: -5rem;
   }
 }
 
@@ -1085,6 +1100,10 @@ footer p {
     font-size: 1.25rem;
     letter-spacing: 0.5rem;
   }
+
+  .rodape p {
+    margin-left: -3.125rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1099,6 +1118,10 @@ footer p {
   .background-box-2 h2 {
     letter-spacing: 0.3125rem;
   }
+
+  .rodape p {
+    margin-left: -1.875rem;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -1106,7 +1129,103 @@ footer p {
     height: auto;
   }
 
+  .habilidades h2 {
+    font-size: 1.25rem;
+    max-width: 18.75rem;
+    letter-spacing: 0.125rem;
+  }
+
   .skills-container {
     grid-template-columns: 1fr;
+  }
+
+  .rodape p {
+    margin-left: -0.9375rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .aside-menu a {
+    font-size: 0.625rem;
+  }
+
+  .inicial h1 {
+    font-size: 5.625rem;
+    letter-spacing: 0.1875rem;
+  }
+
+  .inicial h2 {
+    max-width: 20.625rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .inicial p {
+    letter-spacing: 0.0625rem;
+    font-size: 1rem;
+    max-width: 21.875rem;
+  }
+
+  .sobre-img img {
+    height: 21.875rem;
+  }
+
+  .rodape p {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .aside-menu a {
+    font-size: 0.3125rem;
+  }
+
+  .menu.sticky li a {
+    font-size: 0.4375rem;
+  }
+
+  .inicial h1 {
+    font-size: 4.375rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .inicial h2 {
+    max-width: 16.25rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .inicial p {
+    letter-spacing: 0.0625rem;
+    font-size: 1rem;
+    max-width: 290px;
+  }
+
+  .sobre-mim-container {
+    padding-bottom: 1500px;
+  }
+
+  .background-box-2 {
+    margin: -12% 5% 10% 5%;
+  }
+
+  .background-box-2 h2 {
+    font-size: 0.8125rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .card-projeto {
+    margin-top: 90px;
+    width: 10px;
+  }
+
+  .habilidades h2 {
+    font-size: 1.125rem;
+    max-width: 275px;
+    letter-spacing: 0.125rem;
+  }
+
+  .rodape p,
+  .rodape img {
+    display: none;
   }
 }
