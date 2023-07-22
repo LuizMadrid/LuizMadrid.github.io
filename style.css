@@ -445,11 +445,11 @@ span.color2 {
 }
 
 .box-conteudo-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3.4375rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
 
+  gap: 3.4375rem;
   margin: -10rem 3.125rem 0rem 36.25rem;
   max-width: 62.5rem;
 }
@@ -868,10 +868,6 @@ footer p {
     height: 500px;
   }
 
-  .box-conteudo-bottom {
-    margin: -6.875rem 0rem 0rem 34.375rem;
-  }
-
   .card-projeto {
     margin: 1.25rem;
     padding: 9.375rem;
@@ -911,10 +907,6 @@ footer p {
     height: 450px;
   }
 
-  .box-conteudo-bottom {
-    margin: -3.125rem 0rem 0rem 31.25rem;
-  }
-
   .card_content a {
     margin-left: 0.9375rem;
   }
@@ -932,10 +924,6 @@ footer p {
 @media screen and (max-width: 1560px) {
   .sobre-img img {
     height: 25rem;
-  }
-
-  .box-conteudo-bottom {
-    margin: -3.125rem 0rem 0rem 400px;
   }
 
   .card_description {
@@ -968,10 +956,6 @@ footer p {
 
   .sobre-mim-container {
     padding-bottom: 68.75rem;
-  }
-
-  .box-conteudo-bottom {
-    margin: 50px 0rem 0rem 0rem;
   }
 
   .container-cards-1,
@@ -1053,6 +1037,7 @@ footer p {
 
   .box-conteudo-bottom {
     margin: 3.125rem 0rem 0px 0rem;
+    grid-template-columns: 1fr;
   }
 
   .background-box-2 h2 {
@@ -1125,6 +1110,15 @@ footer p {
 }
 
 @media screen and (max-width: 580px) {
+  .background-box-2 {
+    margin: -8% 5% 10% 5%;
+  }
+
+  .background-box-2 h2 {
+    font-size: 0.9375rem;
+    letter-spacing: 0.1875rem;
+  }
+
   .habilidades {
     height: auto;
   }
@@ -1201,7 +1195,11 @@ footer p {
   }
 
   .sobre-mim-container {
-    padding-bottom: 1500px;
+    padding-bottom: 93.75rem;
+  }
+
+  .box-conteudo-bottom div {
+    height: auto;
   }
 
   .background-box-2 {
