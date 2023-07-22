@@ -105,9 +105,7 @@ span.color2 {
   width: 100%;
   backdrop-filter: blur(0.4375rem);
   background: #d4d4d499;
-  border-bottom: 2px solid rgba(80, 79, 79, 0.7);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 1.1875rem 2.375rem,
-    rgba(0, 0, 0, 0.22) 0px 0.9375rem 0.75rem;
+  border-bottom: 2px solid rgba(158, 157, 157, 0.4);
   position: fixed;
   transition: 0.7s;
 
@@ -303,7 +301,7 @@ span.color2 {
 
 .social a {
   color: #323232;
-  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-decoration: none;
 }
 
@@ -379,7 +377,6 @@ span.color2 {
 
 .sobre-mim-container {
   height: 53.75rem;
-  width: 100%;
   border: 10px solid transparent;
   box-shadow: rgba(190, 190, 190, 0.4) 0rem -0.3125rem,
     rgba(190, 190, 190, 0.3) 0rem -0.625rem,
@@ -388,7 +385,7 @@ span.color2 {
     rgba(190, 190, 190, 0.05) 0rem -1.5625rem;
 }
 
-.background-box-1 {
+/* .background-box-1 {
   position: absolute;
   border: 2px solid none;
   margin: -2.5% 80% 0% 5%;
@@ -403,6 +400,24 @@ span.color2 {
   border-radius: 0.75rem;
   text-transform: uppercase;
   border: 1px solid transparent;
+} */
+
+.sobre-mim-titulo h2 {
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(to top, #9c4effcc 50%, transparent 50%);
+  margin: 2% 84.5% 0% 5%;
+  font-size: 1.875rem;
+  padding-bottom: 0.3125rem;
+  letter-spacing: 0.3125rem;
+  transition: all 1s;
+}
+
+.sobre-mim-titulo h2:hover {
+  margin: 2% 70% 0% 5%;
+  background: linear-gradient(to top, #ff426fcc 50%, transparent 50%);
+  transition: all 0.5s;
+  border-radius: 0px 0px 0px 200px;
 }
 
 .sobre-mim {
@@ -431,7 +446,6 @@ span.color2 {
 .conteudo-sobre-mim h3 {
   font-size: 2.1875rem;
   letter-spacing: 0.1875rem;
-  padding-top: 6.875rem;
   padding-bottom: 0.625rem;
 }
 
@@ -449,7 +463,7 @@ span.color2 {
   justify-content: center;
   gap: 3.4375rem;
 
-  margin: -8.125rem 3.125rem 0rem 34.375rem;
+  margin: -10rem 3.125rem 0rem 39.375rem;
   max-width: 62.5rem;
 }
 
@@ -479,10 +493,10 @@ span.color2 {
 .box-conteudo-bottom div:hover {
   transform: scale(1.05);
   transition: 0.2s;
-  background-color: #777;
+  background: linear-gradient(90deg, #777, #999);
   backdrop-filter: blur(40px);
+  filter: drop-shadow(#666 20px 20px 0.8125rem);
   border: none;
-  filter: drop-shadow(#333 20px 20px 0.8125rem);
 }
 
 .box-conteudo-bottom div:hover {
@@ -648,13 +662,89 @@ span.color2 {
 /* Começo da estilização das habilidades */
 
 .habilidades {
-  height: 56.25rem;
-  width: 100%;
+  height: 800px;
+  margin: 0% 5% 0% 5%;
 }
 
 .habilidades h2 {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  background: linear-gradient(to top, #9c4effcc 50%, transparent 50%);
+  margin: 0% 70.5% 0% 0%;
+  padding-bottom: 0.3125rem;
+  font-size: 1.875rem;
+  letter-spacing: 0.3125rem;
+  transition: all 1s;
+}
+
+.habilidades h2:hover {
+  margin: 0% 60% 0% 0%;
+  background: linear-gradient(to top, #ff426fcc 50%, transparent 50%);
+  border-radius: 0px 0px 0px 200px;
+  transition: all 0.5s;
+}
+
+.skills-container {
+  margin: 13% 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 100px 45px;
+  width: 80%;
+  z-index: 1000;
+}
+
+.skills-container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 1.25rem;
+  gap: 0.5rem;
+  font-family: Rubik, sans-serif;
+  color: #323232;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.skills-container div img {
+  height: 4.375rem;
+  filter: grayscale(100%);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skills-container div h4 {
+  letter-spacing: 0.1875rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+  padding: 0px 0.9375rem 0px 0.9375rem;
+}
+
+.skills-container div p {
+  text-transform: capitalize;
+  font-size: 16px;
+  border: 1px solid #18123e;
+  padding: 0.75rem;
+  background-color: #18123e;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 600;
+  visibility: hidden;
+}
+
+.skills-container div:hover {
+  transform: scale(1.1);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(40px);
+  filter: drop-shadow(#666 25px 25px 5px);
+}
+
+.skills-container div:hover img {
+  filter: none;
+}
+
+.skills-container div:hover p {
+  visibility: visible;
 }
 
 /* Fim da estilização das habilidades */
@@ -664,14 +754,32 @@ span.color2 {
 /* Começo da estilizaçao do contato */
 
 .contato {
-  height: 56.25rem;
-  width: 100%;
+  height: 800px;
+  margin: 0% 5% 0% 5%;
 }
 
 .contato h2 {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  background: linear-gradient(to top, #9c4effcc 50%, transparent 50%);
+  margin: 0% 91.5% 0% 0%;
+  padding-bottom: 0.3125rem;
+  font-size: 1.875rem;
+  letter-spacing: 0.3125rem;
+  transition: all 1s;
 }
+
+.contato h2:hover {
+  margin: 0% 70% 0% 0%;
+  background: linear-gradient(to top, #ff426fcc 50%, transparent 50%);
+  border-radius: 0px 0px 0px 200px;
+  transition: all 0.5s;
+}
+
+/* .contato h2 {
+  display: flex;
+  justify-content: center;
+} */
 
 /* Fim da estilização do contato */
 
