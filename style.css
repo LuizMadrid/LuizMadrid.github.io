@@ -27,6 +27,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: #ececec;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 body,
@@ -746,7 +747,7 @@ span.color2 {
 /* Começo da estilizaçao do contato */
 
 .contato {
-  height: 800px;
+  height: auto;
   margin: 0% 5% 0% 5%;
 }
 
@@ -768,10 +769,121 @@ span.color2 {
   transition: all 0.5s;
 }
 
-/* .contato h2 {
+.contato-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 2.8125rem;
+}
+
+.img-contato img {
+  height: 50rem;
+}
+
+.contato-conteudo {
+  margin-top: -6.25rem;
+
   display: flex;
   justify-content: center;
-} */
+  align-items: center;
+  flex-flow: column;
+}
+
+.contato-conteudo h4 {
+  font-size: 2.1875rem;
+  letter-spacing: 0.1875rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 4.375rem;
+
+  border-bottom: solid;
+  border-width: 0.1875rem;
+  border-image: linear-gradient(90deg, #9c4eff, #ff426f) 1;
+}
+
+.contato-social {
+  cursor: url("assets/img/pointer.png"), auto;
+  border: none;
+  border-radius: 1.125rem;
+  background: linear-gradient(90deg, #f89db2, #ff89a5, #fd7897);
+  font-weight: 700;
+  height: 4.375rem;
+  margin: 0rem 0rem 1.875rem 0rem;
+  transition: all 0.3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+}
+
+.icone {
+  cursor: url("assets/img/pointer.png"), auto;
+  padding: 0rem 2.5rem;
+  box-sizing: border-box;
+  border-right: 1px solid #323232;
+  font-size: 1.5625rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone i {
+  cursor: url("assets/img/pointer.png"), auto;
+}
+
+.contato-social span {
+  cursor: url("assets/img/pointer.png"), auto;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  z-index: 1000;
+}
+
+.email {
+  padding: 1.25rem 6.25rem;
+}
+
+.discord {
+  padding: 1.25rem 13.125rem;
+}
+
+.contato-social h5,
+.contato-social h6 {
+  cursor: url("assets/img/pointer.png"), auto;
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0;
+  margin-left: 13.125rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.1875rem;
+}
+
+.contato-social h6 {
+  margin-left: 11.25rem;
+}
+
+.contato-social:active h5 {
+  display: none;
+}
+
+.contato-social:active h6 {
+  opacity: 1;
+  color: #383;
+}
+
+.contato-social:hover {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(#666 0.9375rem 0.9375rem 0.3125rem);
+}
+
+.contato-social:hover span {
+  opacity: 0;
+}
+
+.contato-social:hover h5 {
+  opacity: 1;
+}
 
 /* Fim da estilização do contato */
 
@@ -852,6 +964,11 @@ footer p {
   justify-content: center;
 }
 
+footer p a {
+  text-decoration: none;
+  color: #ff426f;
+}
+
 /* Fim da estilização do footer */
 
 /* ----------xxx---------- */
@@ -906,6 +1023,13 @@ footer p {
     margin-left: 1.5625rem;
   }
 }
+
+@media screen and (max-width: 1760px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 1680px) {
   .background-box-1 {
     margin: -3% 0% 0% 5%;
@@ -1057,6 +1181,14 @@ footer p {
     grid-template-columns: 1fr 1fr;
   }
 
+  .img-contato img {
+    height: 37.5rem;
+  }
+
+  .contato-conteudo h4 {
+    font-size: 30px;
+  }
+
   .logo-rodape {
     margin-left: -6.25rem;
   }
@@ -1097,6 +1229,10 @@ footer p {
     font-size: 1.25rem;
     letter-spacing: 0.5rem;
   }
+
+  .contato-conteudo h4 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1112,8 +1248,47 @@ footer p {
     letter-spacing: 0.3125rem;
   }
 
+  .email {
+    padding: 1.25rem 40px;
+  }
+
+  .discord {
+    padding: 1.25rem 150px;
+  }
+
+  .contato-social h5,
+  .contato-social h6 {
+    margin-left: 9.375rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.125rem;
+  }
+
   .logo-rodape {
     margin-left: -1.875rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img-contato img {
+    height: 31.25rem;
+  }
+
+  .contato-conteudo h4 {
+    font-size: 1.5625rem;
+  }
+
+  .email {
+    padding: 1.25rem 10px;
+  }
+
+  .discord {
+    padding: 1.25rem 120px;
+  }
+
+  .contato-social h5,
+  .contato-social h6 {
+    margin-left: 7.8125rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -1139,6 +1314,10 @@ footer p {
 
   .skills-container {
     grid-template-columns: 1fr;
+  }
+
+  .img-contato img {
+    height: 25rem;
   }
 }
 
@@ -1171,8 +1350,37 @@ footer p {
     margin-top: 5.625rem;
   }
 
+  .img-contato img {
+    display: none;
+  }
+
+  .contato-conteudo {
+    margin-top: 0rem;
+  }
+
+  .contato-social span {
+    font-size: 12px;
+    letter-spacing: 0rem;
+  }
+
+  .discord {
+    padding: 1.25rem 3.75rem;
+  }
+
+  .contato-social h5,
+  .contato-social h6 {
+    margin-left: 110px;
+    font-size: 10px;
+  }
+
   .logo-rodape {
     margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  footer p:nth-child(3) {
+    font-size: 0.75rem;
   }
 }
 
