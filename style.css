@@ -877,15 +877,6 @@ span.color2 {
   margin-left: 11.25rem;
 }
 
-.contato-social:active h5 {
-  display: none;
-}
-
-.contato-social:active h6 {
-  opacity: 1;
-  color: #383;
-}
-
 .contato-social:hover {
   transition: all 0.3s ease-in-out;
   filter: drop-shadow(#666 0.9375rem 0.9375rem 0.3125rem);
@@ -897,6 +888,15 @@ span.color2 {
 
 .contato-social:hover h5 {
   opacity: 1;
+}
+
+.contato-social:active h5 {
+  display: none;
+}
+
+.contato-social:active h6 {
+  opacity: 1;
+  color: #383;
 }
 
 /* Fim da estilização do contato */
