@@ -204,7 +204,6 @@ span.color2 {
 
   letter-spacing: 0.1875rem;
   text-decoration: none;
-  /* color: #fff; */
   color: #323232;
   font-weight: 600;
   font-size: 1.25rem;
@@ -289,6 +288,18 @@ span.color2 {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1875rem;
+  line-height: 7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: column;
+}
+
+.inicial h1 span {
+  font-size: 1.875rem;
+  text-transform: none;
+  line-height: 2rem;
 }
 
 .inicial h2 {
@@ -394,7 +405,7 @@ span.color2 {
 }
 
 .sobre-mim-container {
-  height: 53.75rem;
+  height: 700px;
   margin: 0% 5% 0% 5%;
 }
 
@@ -511,13 +522,17 @@ span.color2 {
 .projetos-cards {
   background: linear-gradient(-45deg, #18123edd, #0a0722, #07051f, #03000e);
   height: auto;
-  padding-top: 10%;
+  padding-top: 5%;
   box-shadow: rgba(24, 18, 62, 0.4) 0rem 0.3125rem,
     rgba(24, 18, 62, 0.3) 0rem 0.625rem, rgba(24, 18, 62, 0.2) 0rem 0.9375rem,
     rgba(24, 18, 62, 0.1) 0rem 1.25rem, rgba(24, 18, 62, 0.05) 0rem 1.5625rem,
     rgba(24, 18, 62, 0.4) 0rem -0.3125rem, rgba(24, 18, 62, 0.3) 0rem -0.625rem,
     rgba(24, 18, 62, 0.2) 0rem -0.9375rem, rgba(24, 18, 62, 0.1) 0rem -1.25rem,
     rgba(24, 18, 62, 0.05) 0rem -1.5625rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background-box-2 h2 {
@@ -533,16 +548,15 @@ span.color2 {
   align-items: center;
 }
 
-.container-cards-1,
-.container-cards-2 {
-  margin: 0% 16.5% 1% 16.5%;
+.container-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3.125rem 3.125rem;
+  justify-content: center;
+  align-items: center;
 
-  display: flex;
-  justify-content: space-between;
-}
-
-.container-cards-2 {
-  padding-bottom: 7.5rem;
+  max-width: 56.25rem;
+  padding: 2.5rem;
 }
 
 /* Estilização dos CARD's */
@@ -652,7 +666,7 @@ span.color2 {
 /* Começo da estilização das habilidades */
 
 .habilidades {
-  height: 800px;
+  height: auto;
   margin: 0% 5% 0% 5%;
 }
 
@@ -1003,13 +1017,6 @@ footer p a {
     padding: 9.375rem;
   }
 
-  .container-cards-1,
-  .container-cards-2 {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-  }
-
   .card_description {
     margin: 0.625rem 0 1.5625rem;
     font-size: 0.9375rem;
@@ -1103,15 +1110,12 @@ footer p a {
     margin: 2.5rem 0rem 0rem 0rem;
   }
 
-  .container-cards-1,
-  .container-cards-2 {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
-
   .background-box-1 {
     margin: -4% 60% 0% 5%;
+  }
+
+  .container-cards {
+    grid-template-columns: 1fr 1fr;
   }
 
   .card_content a {
@@ -1177,6 +1181,10 @@ footer p a {
     font-size: 1.5625rem;
   }
 
+  .container-cards {
+    grid-template-columns: 1fr;
+  }
+
   .skills-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -1199,7 +1207,7 @@ footer p a {
     flex: 80%;
     text-align: center;
     margin: 0%;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
   }
 
   .logo {
@@ -1214,7 +1222,8 @@ footer p a {
   }
 
   .menu.sticky {
-    height: 105px;
+    height: 6.5625rem;
+    margin-top: -1.25rem;
   }
 
   .background-box-1 {
@@ -1302,6 +1311,13 @@ footer p a {
     letter-spacing: 0.1875rem;
   }
 
+  .container-cards {
+    grid-gap: 1.25rem 0rem;
+
+    max-width: 0rem;
+    padding-bottom: 2.5rem;
+  }
+
   .habilidades {
     height: auto;
   }
@@ -1329,6 +1345,11 @@ footer p a {
   .inicial h1 {
     font-size: 5.625rem;
     letter-spacing: 0.1875rem;
+    line-height: 5rem;
+  }
+
+  .inicial h1 span {
+    font-size: 25px;
   }
 
   .inicial h2 {
@@ -1344,10 +1365,6 @@ footer p a {
 
   .sobre-img img {
     height: 21.875rem;
-  }
-
-  .card-projeto {
-    margin-top: 5.625rem;
   }
 
   .img-contato img {
@@ -1382,20 +1399,54 @@ footer p a {
   footer p:nth-child(3) {
     font-size: 0.75rem;
   }
+
+  .rodape {
+    display: grid;
+    grid-template-areas:
+      ". . . social social . . ."
+      ". . . social social . . ."
+      ". . . social social . . ."
+      ". . . social social . . .";
+  }
+
+  .rodape h2 {
+    text-align: center;
+  }
+
+  .rodape li {
+    text-align: center;
+  }
+
+  .rodape p,
+  .rodape img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 410px) {
+  .menu.sticky {
+    height: 60px;
+    margin-top: 0px;
+  }
+
   .aside-menu a {
-    font-size: 0.3125rem;
+    display: none;
+    /* font-size: 0.3125rem; */
   }
 
   .menu.sticky li a {
-    font-size: 0.4375rem;
+    display: none;
+    /* font-size: 0.4375rem; */
   }
 
   .inicial h1 {
     font-size: 4.375rem;
     letter-spacing: 0.0625rem;
+    line-height: 4rem;
+  }
+
+  .inicial h1 span {
+    font-size: 20px;
   }
 
   .inicial h2 {
@@ -1454,11 +1505,6 @@ footer p a {
     font-size: 1.125rem;
     max-width: 275px;
     letter-spacing: 0.125rem;
-  }
-
-  .rodape p,
-  .rodape img {
-    display: none;
   }
 }
 
