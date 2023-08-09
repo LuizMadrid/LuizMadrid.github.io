@@ -405,7 +405,7 @@ span.color2 {
 }
 
 .sobre-mim-container {
-  height: 700px;
+  height: 50rem;
   margin: 0% 5% 0% 5%;
 }
 
@@ -521,7 +521,7 @@ span.color2 {
 
 .projetos-cards {
   background: linear-gradient(-45deg, #18123edd, #0a0722, #07051f, #03000e);
-  height: auto;
+  height: 46.875rem;
   padding-top: 5%;
   box-shadow: rgba(24, 18, 62, 0.4) 0rem 0.3125rem,
     rgba(24, 18, 62, 0.3) 0rem 0.625rem, rgba(24, 18, 62, 0.2) 0rem 0.9375rem,
@@ -689,14 +689,14 @@ span.color2 {
 }
 
 .skills-container {
-  margin: 12% 0% 12% 0%;
+  margin: 11% 0% 9% 0%;
   gap: 6.25rem 2.8125rem;
   width: 100%;
   z-index: 1000;
 
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .skills-container div {
