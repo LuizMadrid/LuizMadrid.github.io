@@ -521,7 +521,7 @@ span.color2 {
 
 .projetos-cards {
   background: linear-gradient(-45deg, #18123edd, #0a0722, #07051f, #03000e);
-  height: 46.875rem;
+  height: auto;
   padding-top: 5%;
   box-shadow: rgba(24, 18, 62, 0.4) 0rem 0.3125rem,
     rgba(24, 18, 62, 0.3) 0rem 0.625rem, rgba(24, 18, 62, 0.2) 0rem 0.9375rem,
@@ -540,8 +540,7 @@ span.color2 {
   font-size: 2.5rem;
   letter-spacing: 0.625rem;
   padding: 1.5625rem 0px;
-  max-width: 1000px;
-  /* margin-bottom: 5rem; */
+  max-width: 62.5rem;
 
   display: flex;
   justify-content: center;
@@ -817,10 +816,10 @@ span.color2 {
 
 .contato-social {
   cursor: url("assets/img/pointer.png"), auto;
-  border: none;
+  border: 1px solid #ff426f;
   border-radius: 1.125rem;
-  background: linear-gradient(90deg, #f89db2, #ff89a5, #fd7897);
-  font-weight: 700;
+  background: #f79eb3;
+  font-weight: 500;
   height: 4.375rem;
   margin: 0rem 0rem 1.875rem 0rem;
   transition: all 0.3s ease-in-out;
@@ -848,12 +847,11 @@ span.color2 {
 .contato-social span {
   cursor: url("assets/img/pointer.png"), auto;
   font-size: 1.25rem;
-  letter-spacing: 0.125rem;
   z-index: 1000;
 }
 
 .email {
-  padding: 1.25rem 6.25rem;
+  padding: 1.25rem 7.5rem;
 }
 
 .discord {
@@ -866,15 +864,15 @@ span.color2 {
   position: absolute;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
   opacity: 0;
   margin-left: 13.125rem;
   font-size: 1.25rem;
-  letter-spacing: 0.1875rem;
+  letter-spacing: -0.2992px;
 }
 
 .contato-social h6 {
-  margin-left: 11.25rem;
+  margin-left: 12.5rem;
 }
 
 .contato-social:hover {
@@ -896,7 +894,7 @@ span.color2 {
 
 .contato-social:active h6 {
   opacity: 1;
-  color: #383;
+  color: #7c7;
 }
 
 /* Fim da estilização do contato */
