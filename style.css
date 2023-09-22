@@ -266,11 +266,7 @@ span.color2 {
   align-items: center;
 
   height: 62.5rem;
-  background: linear-gradient(
-      to right,
-      rgba(170, 170, 170, 0.55),
-      rgba(225, 225, 225, 0.8)
-    ),
+  background: linear-gradient(to right, rgba(170, 170, 170, 0.55), rgba(225, 225, 225, 0.8)),
     center center / cover no-repeat, url(assets/img/common-bg.svg);
   background-size: cover no-repeat;
   background-position: center center;
@@ -396,10 +392,8 @@ span.color2 {
 
 .inicio-shadow {
   border: 10px solid transparent;
-  box-shadow: rgba(190, 190, 190, 0.4) 0rem -0.3125rem,
-    rgba(190, 190, 190, 0.3) 0rem -0.625rem,
-    rgba(190, 190, 190, 0.2) 0rem -0.9375rem,
-    rgba(190, 190, 190, 0.1) 0rem -1.25rem,
+  box-shadow: rgba(190, 190, 190, 0.4) 0rem -0.3125rem, rgba(190, 190, 190, 0.3) 0rem -0.625rem,
+    rgba(190, 190, 190, 0.2) 0rem -0.9375rem, rgba(190, 190, 190, 0.1) 0rem -1.25rem,
     rgba(190, 190, 190, 0.05) 0rem -1.5625rem;
   /* transform: rotate(180deg); */
 }
@@ -523,12 +517,10 @@ span.color2 {
   background: linear-gradient(-45deg, #18123edd, #0a0722, #07051f, #03000e);
   height: auto;
   padding-top: 5%;
-  box-shadow: rgba(24, 18, 62, 0.4) 0rem 0.3125rem,
-    rgba(24, 18, 62, 0.3) 0rem 0.625rem, rgba(24, 18, 62, 0.2) 0rem 0.9375rem,
-    rgba(24, 18, 62, 0.1) 0rem 1.25rem, rgba(24, 18, 62, 0.05) 0rem 1.5625rem,
-    rgba(24, 18, 62, 0.4) 0rem -0.3125rem, rgba(24, 18, 62, 0.3) 0rem -0.625rem,
-    rgba(24, 18, 62, 0.2) 0rem -0.9375rem, rgba(24, 18, 62, 0.1) 0rem -1.25rem,
-    rgba(24, 18, 62, 0.05) 0rem -1.5625rem;
+  box-shadow: rgba(24, 18, 62, 0.4) 0rem 0.3125rem, rgba(24, 18, 62, 0.3) 0rem 0.625rem,
+    rgba(24, 18, 62, 0.2) 0rem 0.9375rem, rgba(24, 18, 62, 0.1) 0rem 1.25rem, rgba(24, 18, 62, 0.05) 0rem 1.5625rem,
+    rgba(24, 18, 62, 0.4) 0rem -0.3125rem, rgba(24, 18, 62, 0.3) 0rem -0.625rem, rgba(24, 18, 62, 0.2) 0rem -0.9375rem,
+    rgba(24, 18, 62, 0.1) 0rem -1.25rem, rgba(24, 18, 62, 0.05) 0rem -1.5625rem;
 
   display: flex;
   justify-content: center;
@@ -717,7 +709,8 @@ span.color2 {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.skills-container div h4 {
+.skills-container div h3 {
+  font-size: 1.25rem;
   letter-spacing: 0.1875rem;
   line-height: 1.875rem;
   font-weight: 600;
@@ -803,7 +796,7 @@ span.color2 {
   flex-flow: column;
 }
 
-.contato-conteudo h4 {
+.contato-conteudo h3 {
   font-size: 2.1875rem;
   letter-spacing: 0.1875rem;
   padding-bottom: 1.25rem;
