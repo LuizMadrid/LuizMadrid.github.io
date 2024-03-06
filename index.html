@@ -3,101 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ↓↓ Descrição e Keywords ↓↓ -->
     <meta name="description" content="Meu portfólio, Luiz Madrid Desenvolvedor." />
     <meta name="keywords" content="Luiz Madrid Desenvolvedor FrontEnd, Portfolio frontend, Front-End" />
-    <!-- ↑↑ Descrição e Keywords ↑↑ -->
 
-    <!-- ======= FAVICON ======= -->
     <link rel="shortcut icon" href="assets/img/LUIZ MADRID LOGO SIMBOLO.png" type="image/x-icon" />
-    <!-- ======= FAVICON ======= -->
 
     <title>Portfólio | Luiz Madrid</title>
 
-    <!-- ======= CSS ======= -->
     <link rel="stylesheet" href="style.css" />
-    <!-- ======= CSS ======= -->
-
-    <!-- ======= ICON'S ======= -->
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/af95fc2e99.js" crossorigin="anonymous"></script>
-    <!-- ======= ICON'S ======= -->
-
-    <!-- ======= JS ======= -->
-    <script src="script.js"></script>
-    <!-- ======= JS ======= -->
   </head>
   <body>
     <div class="container">
-      <!-- ↓↓ NAVBAR -->
+
       <header class="menu">
         <nav class="navbar">
+
           <div class="logo">
             <a href="#Inicial" aria-label="Link para o começo do portfólio.">
               <img src="assets/img/LUIZ MADRID LOGO NOVO (letra preta).png" alt="Logo Madrid-Dev" /> Portfólio
             </a>
           </div>
+
           <div class="aside-menu">
             <ul>
               <li>
                 <a href="#Sobre-mim" aria-label="Redireciona para seção sobre mim.">Sobre Mim</a>
+              </li>
+
+              <li>
                 <a href="#Projetos" aria-label="Redireciona para seção com projetos.">Projetos</a>
-                <a href="#Habilidades" aria-label="Redireciona para seção com minhas skills.">Skills</a>
+              </li>
+
+              <li>
                 <a href="#Contato" aria-label="Redireciona para seção de contato.">Contato</a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
-      <!-- ↑↑ NAVBAR -->
-      <!-- ↓↓ Página Inicial -->
+
       <section class="headline" id="Inicial">
         <a href="#Inicial" class="btn-top" aria-label="Botão que leva para o topo de página.">
           <i class="fa-solid fa-arrow-up"></i>
         </a>
+
         <div class="inicial">
-          <h1><span>Bem-vindo(a), sou </span>Luiz Madrid.</h1>
+          <h1>
+            <span>
+              Bem-vindo(a), sou 
+            </span>
+            Luiz Madrid.
+          </h1>
+
           <h2>Desenvolvedor Front-End</h2>
+
           <div class="social">
             <a
               href="https://www.instagram.com/luixz.madrid/"
               target="_blank"
               class="social-title"
-              aria-label="Meu perfil do instagram.">
+              aria-label="Meu perfil do Instagram.">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            |
+            <span>|</span>
             <a
               href="https://www.linkedin.com/in/luiz-madrid-800107271/"
               target="_blank"
               class="social-title"
-              aria-label="Meu perfil do linkedin.">
+              aria-label="Meu perfil do LinkedIn.">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            |
+            <span>|</span>
             <a
               href="https://github.com/LuizMadrid"
               target="_blank"
               class="social-title"
-              aria-label="Meu perfil do github.">
+              aria-label="Meu perfil do Github.">
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
+
           <p id="type">
             Olá, é um prazer recebê-lo(a) neste espaço onde compartilho minha jornada profissional e acadêmica. Aqui,
             você encontrará informações sobre meus projetos, minhas skills e um pouco mais sobre mim.
           </p>
         </div>
-        <div id="Sobre-mim" style="margin-top: 58.75rem"> </div>
+        <div id="Sobre-mim" style="margin-top: 58.75rem">&nbsp;</div>
       </section>
-      <!-- ↑↑ Página Inicial -->
 
-      <!-- ↓↓ Página Sobre Mim -->
       <div class="inicio-shadow"></div>
+
       <section class="sobre-mim-container">
         <div class="sobre-mim-titulo">
           <h2>Sobre mim</h2>
         </div>
+
         <div class="sobre-mim">
           <div class="sobre-img">
             <img src="assets/img/eu 2_portfolio.png" alt="" />
@@ -111,312 +113,201 @@
               nestas duas especializações. Depois de ter aprendido o suficiente destas duas áreas vou escolher somente
               uma para me especializar.
             </p>
-            <p>
-              Atualmente me programo para acabar de estudar JavaScript, logo após embarcar em React. E para CSS terminar
-              alguns projetos com SASS pra estudar o Tailwind.
-            </p>
           </div>
+
           <div class="box-conteudo-bottom">
             <div>
               <i class="fa-solid fa-user"></i>
-              <p>Tenho 23 anos, sou natural de Araçatuba/SP.</p>
+              <p id="age"></p>
             </div>
+
             <div>
               <i class="fa-solid fa-mug-hot"></i>
-              <p>Atualmente, estou no 7º termo na faculdade, e sendo freelancer para melhorar minhas habilidades.</p>
+              <p>Atualmente, estou no 8º semestre na faculdade, e sendo freelancer para melhorar minhas habilidades.</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- ↑↑ Página Sobre Mim -->
 
-      <!-- ↓↓ Página dos Projetos -->
       <div id="Projetos" style="padding-top: 8.125rem"></div>
+
       <section class="projetos">
         <div class="background-box-2">
           <h2>
-            Conheça <span class="color1"> alguns </span> dos meus Projetos
+            Conheça <span class="color1">&nbsp;alguns&nbsp;</span> dos meus Projetos
             <span class="color1">.</span>
           </h2>
         </div>
+        
         <div class="projetos-cards">
           <div class="container-cards">
-            <div class="card-projeto">
-              <img src="assets/img/portifolio_fundo.png" alt="Projeto (Nome)" />
-              <div class="card_content">
-                <p class="card_title">Projeto 1</p>
-                <p class="card_description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-                <p class="skills">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-react"></i>
-                  <i class="fa-brands fa-vuejs"></i>
-                  <i class="fa-brands fa-node-js"></i>
-                </p>
 
-                <a href="#" class="card_link" aria-label="Mostra a página do projeto."
-                  ><i class="fa-solid fa-link"></i> Live Preview</a
-                >
-                <a href="#" class="card_link secondary" aria-label="Mostra o repositorio de arquivos do projeto."
-                  ><i class="fa-brands fa-github">  </i>Code</a
-                >
+            <div class="card-projeto-container">
+              <div class="card-projeto">
+                <div class="card-img">
+                  <img src="https://utfs.io/f/a45d0234-a408-40d3-8cfe-b42d4c7ff2be-1nq2cb.png" alt="Project Photo" />
+                </div>
+  
+                <div class="card-content">
+                  <div class="project-info">
+                    <div class="card-title-container">
+                      <h2 class="card-title">Romerto Livros</h2>
+  
+                      <div class="project-progress">
+                        <span class="project-andamento">Em andamento</span>
+                      </div>
+                    </div>
+  
+                    <div class="card-descricao">
+                      <p>
+                        Site de uma livraria fictícia, feito com base em uma rede social para livros, onde o usuário pode falar sobre eles e ler resenhas dos usuários. Feito em Next.js, com autenticação e banco de dados em Supabase. Realizado CRUD completo de usuários e buscando livros na API do externa.
+                      </p>
+                    </div>
+  
+                    <div class="card-link-container">
+                      <!-- <a href="#" class="card-link" aria-label="Mostra a página do projeto.">
+                        <i class="fa-solid fa-link"></i>
+                        Site
+                      </a> -->
+  
+                      <a href="https://github.com/LuizMadrid/romerto-livros" class="card-link secondary" aria-label="Mostra o repositório de arquivos do projeto.">
+                        <i class="fa-brands fa-github"></i>
+                        Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="project-message">
+                    <h2>Para mais informações entre no repositório do GitHUB.</h2>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="card-projeto">
-              <img src="assets/img/portifolio_fundo.png" alt="Projeto (Nome)" />
-              <div class="card_content">
-                <p class="card_title">Projeto 2</p>
-                <p class="card_description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-                <p class="skills">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-react"></i>
-                  <i class="fa-brands fa-vuejs"></i>
-                  <i class="fa-brands fa-node-js"></i>
-                </p>
+            <div class="card-projeto-container">
+              <div class="card-projeto">
+                <div class="card-img">
+                  <img src="https://utfs.io/f/8f99687b-8ee0-4d3b-857e-e7b8091d13d7-q5rhx9.png" alt="Project Photo" />
+                </div>
+  
+                <div class="card-content">
+                  <div class="project-info">
+                    <div class="card-title-container">
+                      <h2 class="card-title">FSW Barber</h2>
+  
+                      <div class="project-progress">
+                        <span class="project-andamento">Em andamento</span>
+                      </div>
+                    </div>
+  
+                    <div class="card-descricao">
+                      <p>
+                        FSW Barber é um projeto que contem um catálogo de barbearias e cabeleireiros, onde é possível fazer reservas e buscar as barbearias, quando necessário, realizar o cancelamento. Fiz melhorias no layout e adicionei novas funcionalidades. Como CRUD de barbearias e usuários, otimizei a performance colocando skeletons.
+                      </p>
+                    </div>
+  
+                    <div class="card-link-container">
+                      <a href="https://fullstackweek-barber-sigma.vercel.app/" class="card-link" aria-label="Mostra a página do projeto.">
+                        <i class="fa-solid fa-link"></i>
+                        Site
+                      </a>
+  
+                      <a href="https://github.com/LuizMadrid/fullstackweek-barber" class="card-link secondary" aria-label="Mostra o repositório de arquivos do projeto.">
+                        <i class="fa-brands fa-github"></i>
+                        Code
+                      </a>
+                    </div>
+                  </div>
 
-                <a href="#" class="card_link" aria-label="Mostra a página do projeto."
-                  ><i class="fa-solid fa-link"></i> Live Preview</a
-                >
-                <a href="#" class="card_link secondary" aria-label="Mostra o repositorio de arquivos do projeto."
-                  ><i class="fa-brands fa-github">  </i>Code</a
-                >
+                  <div class="project-message">
+                    <h2>Para mais informações entre no repositório do GitHUB.</h2>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="card-projeto">
-              <img src="assets/img/portifolio_fundo.png" alt="Projeto (Nome)" />
-              <div class="card_content">
-                <p class="card_title">Projeto 3</p>
-                <p class="card_description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-                <p class="skills">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-react"></i>
-                  <i class="fa-brands fa-vuejs"></i>
-                  <i class="fa-brands fa-node-js"></i>
-                </p>
+            <div class="card-projeto-container">
+              <div class="card-projeto">
+                <div class="card-img">
+                  <img src="https://utfs.io/f/5ccfb5ea-6651-4d53-9bcf-5dbb477e4bf9-q54ie9.png" alt="Project Photo" />
+                </div>
+  
+                <div class="card-content">
+                  <div class="project-info">
+                    <div class="card-title-container">
+                      <h2 class="card-title">Mr. Fit it</h2>
+  
+                      <div class="project-progress">
+                        <span class="project-finalizado">Finalizado</span>
+                      </div>
+                    </div>
+  
+                    <div class="card-descricao">
+                      <p>
+                        O site foi integralmente desenvolvido em NextJS, abrangendo tanto a parte do back-end quanto a do front-end. Para o banco de dados, optamos pelo PostgreSQL, ferramentas fundamentais que desempenharam um papel crucial em nossa jornada, proporcionando suporte significativo. Projeto desenvolvido em grupo, onde fui responsável pelo front-end. Apresentado como TCC.
+                      </p>
+                    </div>
+  
+                    <div class="card-link-container">
+                      <a href="https://mr-fix-it-six.vercel.app/" class="card-link" aria-label="Mostra a página do projeto.">
+                        <i class="fa-solid fa-link"></i>
+                        Site
+                      </a>
+  
+                      <a href="https://github.com/luiz-henrique-f/mr-fix-it" class="card-link secondary" aria-label="Mostra o repositório de arquivos do projeto.">
+                        <i class="fa-brands fa-github"></i>
+                        Code
+                      </a>
+                    </div>
+                  </div>
 
-                <a href="#" class="card_link" aria-label="Mostra a página do projeto."
-                  ><i class="fa-solid fa-link"></i> Live Preview</a
-                >
-                <a href="#" class="card_link secondary" aria-label="Mostra o repositorio de arquivos do projeto."
-                  ><i class="fa-brands fa-github">  </i>Code</a
-                >
+                  <div class="project-message">
+                    <h2>Para mais informações entre no repositório do GitHUB.</h2>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="card-projeto">
-              <img src="assets/img/portifolio_fundo.png" alt="Projeto (Nome)" />
-              <div class="card_content">
-                <p class="card_title">Projeto 4</p>
-                <p class="card_description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-                <p class="skills">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-react"></i>
-                  <i class="fa-brands fa-vuejs"></i>
-                  <i class="fa-brands fa-node-js"></i>
-                </p>
-
-                <a href="#" class="card_link" aria-label="Mostra a página do projeto."
-                  ><i class="fa-solid fa-link"></i> Live Preview</a
-                >
-                <a href="#" class="card_link secondary" aria-label="Mostra o repositorio de arquivos do projeto."
-                  ><i class="fa-brands fa-github">  </i>Code</a
-                >
-              </div>
-            </div>
-
-            <div class="card-projeto">
-              <img src="assets/img/portifolio_fundo.png" alt="Projeto (Nome)" />
-              <div class="card_content">
-                <p class="card_title">Projeto 5</p>
-                <p class="card_description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-                <p class="skills">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-react"></i>
-                  <i class="fa-brands fa-vuejs"></i>
-                  <i class="fa-brands fa-node-js"></i>
-                </p>
-
-                <a href="#" class="card_link" aria-label="Mostra a página do projeto."
-                  ><i class="fa-solid fa-link"></i> Live Preview</a
-                >
-                <a href="#" class="card_link secondary" aria-label="Mostra o repositorio de arquivos do projeto."
-                  ><i class="fa-brands fa-github">  </i>Code</a
-                >
-              </div>
-            </div>
-
-            <div class="card-projeto">
-              <img src="assets/img/portifolio_fundo.png" alt="Projeto (Nome)" />
-              <div class="card_content">
-                <p class="card_title">Projeto 6</p>
-                <p class="card_description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-                <p class="skills">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-react"></i>
-                  <i class="fa-brands fa-vuejs"></i>
-                  <i class="fa-brands fa-node-js"></i>
-                </p>
-
-                <a href="#" class="card_link" aria-label="Mostra a página do projeto."
-                  ><i class="fa-solid fa-link"></i> Live Preview</a
-                >
-                <a href="#" class="card_link secondary" aria-label="Mostra o repositorio de arquivos do projeto."
-                  ><i class="fa-brands fa-github">  </i>Code</a
-                >
-              </div>
-            </div>
           </div>
         </div>
       </section>
-      <!-- ↑↑ Página dos Projetos -->
 
-      <!-- ↓↓ Página das Habilidades -->
-      <div id="Habilidades" style="padding-top: 5rem"></div>
-      <section class="habilidades">
-        <h2>Ferramentas e Tecnologias</h2>
-        <div class="skills-container">
-          <div>
-            <img src="assets/skills/sass.svg" alt="Logo do SASS" />
-            <ul>
-              <h3>SASS</h3>
-              <p>Estudando</p>
-            </ul>
-          </div>
-
-          <div>
-            <img src="assets/skills/html.svg" style="height: 5rem; padding-right: 0.625rem" alt="Logo do HTML5" />
-            <ul>
-              <h3>HTML</h3>
-              <p>Avançado</p>
-            </ul>
-          </div>
-
-          <div>
-            <img
-              src="assets/skills/javascript (2).svg"
-              style="height: 5rem; padding-right: 0.625rem"
-              alt="Logo do JavaScript" />
-            <ul>
-              <h3>JAVASCRIPT</h3>
-              <p>Intermediário</p>
-            </ul>
-          </div>
-
-          <div>
-            <img src="assets/skills/tailwindcss.svg" style="height: 3.125rem" alt="Logo do Tailwind" />
-            <ul>
-              <h3>TAILWIND</h3>
-              <p>Estudando</p>
-            </ul>
-          </div>
-
-          <div>
-            <img src="assets/skills/css.svg" style="height: 5rem; padding-right: 0.625rem" alt="Logo do CSS3" />
-            <ul>
-              <h3>CSS</h3>
-              <p>Avançado</p>
-            </ul>
-          </div>
-
-          <div>
-            <img src="assets/skills/styled-components.svg" alt="Logo do styled-components" />
-            <ul>
-              <h3>
-                STYLED <br />
-                COMPONENTS
-              </h3>
-              <p>Intermediário</p>
-            </ul>
-          </div>
-
-          <div>
-            <img src="assets/skills/nodejs (1).svg" style="height: 5rem" alt="Logo do NodeJS" />
-            <ul>
-              <h3>NODE.JS</h3>
-              <p>Iniciante</p>
-            </ul>
-          </div>
-
-          <div>
-            <img src="assets/skills/react.svg" style="height: 6.25rem" alt="Logo do React" />
-            <ul>
-              <h3>REACT</h3>
-              <p>Estudando</p>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- ↑↑ Página das Habilidades -->
-
-      <!-- ↓↓ Página de Contato -->
       <div id="Contato" style="padding: 1.875rem"></div>
+
       <section class="contato">
         <h2>Contato</h2>
+
         <div class="contato-container">
           <div class="img-contato">
             <img src="assets/img/Email.png" alt="" />
           </div>
+
           <div class="contato-conteudo">
             <h3>Entre em contato comigo fácil, basta clicar.</h3>
-            <button class="contato-social">
-              <div class="icone">
+
+            <div class="contato-social">
+              <button class="conteudo-contato" id="email">
+                <p id="emailCopy">luizmadrid.dev@gmail.com</p>
+              </button>
+
+              <button class="icone">
                 <i class="fa-regular fa-envelope"></i>
-              </div>
-              <span class="email">luizmadrid.dev@gmail.com</span>
-              <h5>Clique para copiar!</h5>
-              <h6>Copiado com sucesso!</h6>
-            </button>
-            <button class="contato-social">
-              <div class="icone">
-                <i class="fa-brands fa-discord"></i>
-              </div>
-              <span class="discord">TuxiieZ</span>
-              <h5>Clique para copiar!</h5>
-              <h6>Copiado com sucesso!</h6>
-            </button>
+              </button>
+            </div>
+
+            <div class="contato-social">
+              <button class="conteudo-contato" id="whatsapp">
+                <p id="whatsappCopy">(18) 98173-9656</p>
+              </button>
+  
+              <button class="icone">
+                <i class="fa-brands fa-whatsapp"></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>
-      <!-- ↑↑ Página de Contato -->
 
-      <!-- ↓↓ Footer -->
       <footer>
         <div class="rodape">
           <div class="logo-rodape">
@@ -431,38 +322,40 @@
                   href="https://www.instagram.com/luixz.madrid/"
                   target="_blank"
                   class="social-title"
-                  aria-label="Meu perfil do github.">
+                  aria-label="Meu perfil do Instagram.">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-                |
+                <span>|</span>
                 <a
                   href="https://www.linkedin.com/in/luiz-madrid-800107271/"
                   target="_blank"
                   class="social-title"
-                  aria-label="Meu perfil do linkedin.">
+                  aria-label="Meu perfil do LinkedIn.">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
-                |
+                <span>|</span>
                 <a
                   href="https://github.com/LuizMadrid"
                   target="_blank"
                   class="social-title"
-                  aria-label="Meu perfil do github.">
+                  aria-label="Meu perfil do Github.">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <p>Copyright 2023 © - by Luiz Madrid</p>
-        <p>
-          Direitos de ilustrações: 
-          <a href="https://storyset.com/internet" aria-label="Internet illustration of storyset website."
-            >Internet illustrations by Storyset</a
-          >
-        </p>
+
+        <div class="footer-mensagem">
+          <p>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            ©
+          </p>
+          <p>Luiz Madrid. Todos os direitos reservados.</p>  
+        </div>
       </footer>
-      <!-- ↑↑ Footer -->
     </div>
   </body>
 </html>

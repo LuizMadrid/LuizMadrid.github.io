@@ -32,14 +32,12 @@ body {
 
 body,
 img {
-  /* Desativar interferencia do usuario na pagina como ctrl + a ou selecionar */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* Desativar interferencia do usuario na pagina como ctrl + a ou selecionar */
 }
 
 img {
@@ -59,8 +57,6 @@ span {
 
 /* ----------xxx---------- */
 
-/* Começo da estilização do scroll */
-
 ::-webkit-scrollbar {
   background-color: #d1d1d1;
   width: 0.5625rem;
@@ -78,8 +74,6 @@ span {
   background-color: #333;
 }
 
-/* Fim da estilização do scroll */
-
 /* ----------xxx---------- */
 
 span.color1 {
@@ -91,8 +85,6 @@ span.color2 {
 }
 
 /* ----------xxx---------- */
-
-/* Começo da estilização do navbar */
 
 .navbar {
   z-index: 10;
@@ -142,11 +134,7 @@ span.color2 {
   padding: 0.3438rem 0.3438rem;
 }
 
-/* Fim da estilização do navbar */
-
 /* ----------xxx---------- */
-
-/* Começo da estilização do botão de subir */
 
 .btn-top {
   display: flex;
@@ -185,11 +173,7 @@ span.color2 {
   cursor: url("assets/img/pointer.png"), auto;
 }
 
-/* Fim da estilização do botão de subir */
-
 /* ----------xxx---------- */
-
-/* Começo da estilização da logo da navbar */
 
 .logo {
   flex: 10%;
@@ -220,17 +204,21 @@ span.color2 {
   margin: 0;
 }
 
-/* Fim da estilização da logo do navbar */
-
 /* ----------xxx---------- */
-
-/* Começo da estilização do menu da navbar */
 
 .aside-menu {
   flex: 70%;
   margin-right: 5%;
   text-align: right;
   text-transform: uppercase;
+}
+
+.aside-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.25rem;
+
 }
 
 .aside-menu li {
@@ -253,11 +241,7 @@ span.color2 {
   transition: 0.22s ease-in-out;
 }
 
-/* Fim da estilização do menu da navbar */
-
 /* ----------xxx---------- */
-
-/* Começo da estilização do iniciar */
 
 .headline {
   display: flex;
@@ -323,11 +307,11 @@ span.color2 {
   content: "Meu Instagram";
 }
 
-.social a:nth-child(2)::after {
+.social a:nth-child(3)::after {
   content: "Meu LinkedIn";
 }
 
-.social a:nth-child(3)::after {
+.social a:nth-child(5)::after {
   content: "Meu GitHub";
 }
 
@@ -384,11 +368,7 @@ span.color2 {
   font-weight: 700;
 }
 
-/* Fim da estilização do iniciar */
-
 /* ----------xxx---------- */
-
-/* Começo da estilização do sobre mim */
 
 .inicio-shadow {
   border: 10px solid transparent;
@@ -498,11 +478,7 @@ span.color2 {
   color: #fff;
 }
 
-/* Fim da estilização do sobre mim */
-
 /* ----------xxx---------- */
-
-/* Começo da estilização dos projetos */
 
 .background-box-2 {
   position: absolute;
@@ -514,9 +490,13 @@ span.color2 {
 }
 
 .projetos-cards {
-  background: linear-gradient(-45deg, #18123edd, #0a0722, #07051f, #03000e);
+  background-color: #03000eed;
+  background-image: url(assets/img/Noisy.png);
+  background-size: cover no-repeat;
+  background-position: center center;
   height: auto;
   padding-top: 5%;
+  padding-bottom: 5%;
   box-shadow: rgba(24, 18, 62, 0.4) 0rem 0.3125rem, rgba(24, 18, 62, 0.3) 0rem 0.625rem,
     rgba(24, 18, 62, 0.2) 0rem 0.9375rem, rgba(24, 18, 62, 0.1) 0rem 1.25rem, rgba(24, 18, 62, 0.05) 0rem 1.5625rem,
     rgba(24, 18, 62, 0.4) 0rem -0.3125rem, rgba(24, 18, 62, 0.3) 0rem -0.625rem, rgba(24, 18, 62, 0.2) 0rem -0.9375rem,
@@ -540,99 +520,130 @@ span.color2 {
 }
 
 .container-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3.125rem 3.125rem;
-  justify-content: center;
-  align-items: center;
-
-  max-width: 56.25rem;
-  padding: 2.5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 0 2%;
 }
 
-/* Estilização dos CARD's */
+.card-projeto-container {
+  border-bottom: 1px solid #666;
+}
+
+.card-projeto-container:nth-child(1) {
+  border-top: 1px solid #666;
+}
 
 .card-projeto {
-  position: relative;
-  width: 25rem;
-  aspect-ratio: 16/9;
-  background-color: #f2f2f2;
-  border-radius: 0.625rem;
-  perspective: 62.5rem;
-  overflow: hidden;
-  box-shadow: 0 0 0 0.3125rem #ffffff80;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
+  margin-left: -21.875rem;
+  padding: .75rem 0rem;
+  height: 16rem;
+  transition: all 0.3s ease-in-out;
+  
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-projeto img {
-  height: 12.5rem;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card_image {
-  width: 100%;
-  height: 100%;
+  gap: 1.25rem;
 }
 
 .card-projeto:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0.5rem 5rem rgba(255, 255, 255, 0.6);
+  margin-left: 0px;
+  animation-name: my-animation;
+  animation-duration: 3.3s;
+  animation-timing-function: ease-in-out;
 }
 
-.card_content {
-  position: absolute;
-  top: 0;
-  left: 0;
+.card-projeto .card-img {
+  opacity: 0;
+  position: relative;
+  aspect-ratio: 16/9;
+  width: 30rem;
+  background-color: #f2f2f2;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-projeto .card-img img {
   width: 100%;
   height: 100%;
-  padding: 1.25rem;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  object-fit: fill;
+  object-position: start;
+  transition: all 0.3s ease-in-out;
 }
 
-.card-projeto:hover .card_content {
-  transform: rotateX(0deg);
+.card-projeto .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem 0px;
+  width: 100%;
 }
 
-.card-projeto:hover img {
-  scale: 0;
+.card-content .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card_title {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #333;
-  font-weight: 700;
-}
-
-.card_description {
-  text-indent: 1rem;
-  margin: 0.625rem 0 0.75rem;
-  font-size: 0.75rem;
-  color: #777;
-  line-height: 1.4;
-}
-
-.card_content .skills {
+.card-content .card-title {
   font-size: 1.875rem;
-  margin-bottom: 1.5625rem;
-  transition: all 0.5s;
+  letter-spacing: -0.0313rem;
+  color: #cccccc;
 }
 
-.card_content a {
+.card-content .card-title-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.card-content .card-title-container .project-progress {
+  opacity: 0;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content .card-title-container .project-progress .project-andamento {
+  background-color: #9c4eff;
+  padding: .375rem 1rem;
+  border-radius: 2.875rem;
+}
+
+.card-content .card-title-container .project-progress .project-finalizado {
+  background-color: #323232;
+  padding: .375rem 1rem;
+  border-radius: 2.875rem;
+}
+
+.card-content .card-descricao p {
+  font-size: 1rem;
+  letter-spacing: -0.0125rem;
+  color: #8a8a8a;
+  text-align: justify;
+  line-height: 1.875rem;
+  max-width: 39.375rem;
+}
+
+.card-content .card-link-container {
+  opacity: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.625rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content a {
   text-decoration: none;
-  margin-left: 2.1875rem;
 }
 
-.card_link {
-  padding: 0.9375rem;
+.card-link {
+  padding: .75rem 1.125rem;
   border-radius: 0.5rem;
   background: #777;
   border: none;
@@ -640,117 +651,53 @@ span.color2 {
 }
 
 .secondary {
-  background: transparent;
+  background: white;
   color: #777;
   border: 0.0625rem solid #777;
 }
 
-.card_content a:hover i {
-  color: #ff426f;
+.card-content a:hover i {
   cursor: url("assets/img/pointer.png"), auto;
 }
 
-/* Fim da estilização dos projetos */
-
-/* ----------xxx---------- */
-
-/* Começo da estilização das habilidades */
-
-.habilidades {
-  height: auto;
-  margin: 0% 5% 0% 5%;
+.card-projeto:hover .card-img {
+  opacity: 100%;
 }
 
-.habilidades h2 {
+.card-projeto:hover .card-link-container {
+  opacity: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-projeto:hover .project-progress {
+  opacity: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content .project-message {
+  opacity: 0;
   display: flex;
-  justify-content: right;
-  background: linear-gradient(to top, #9c4effcc 50%, transparent 50%);
-  max-width: 31.25rem;
-  padding-bottom: 0.3125rem;
-  font-size: 1.875rem;
-  letter-spacing: 0.3125rem;
-  transition: all 1s;
-}
-
-.habilidades:hover h2 {
-  max-width: 700px;
-  background: linear-gradient(to top, #ff426fcc 50%, transparent 50%);
-  border-radius: 0rem 0rem 0rem 12.5rem;
-  transition: all 0.5s;
-}
-
-.skills-container {
-  margin: 11% 0% 9% 0%;
-  gap: 6.25rem 2.8125rem;
-  width: 100%;
-  z-index: 1000;
-
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.skills-container div {
-  display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
 
-  font-size: 1.25rem;
-  gap: 0.5rem;
-  color: #323232;
-  transition: all 0.3s ease 0s;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.skills-container div img {
-  height: 4.375rem;
-  filter: grayscale(100%);
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.skills-container div h3 {
-  font-size: 1.25rem;
-  letter-spacing: 0.1875rem;
-  line-height: 1.875rem;
-  font-weight: 600;
-  padding: 0px 0.9375rem 0px 0.9375rem;
-}
-
-.skills-container div p {
-  max-width: 120px;
-  font-size: 16px;
-  text-transform: capitalize;
+  height: 100%;
+  width: 15rem;
+  font-size: small;
   text-align: center;
-  border: 1px solid none;
+  padding: 1rem;
   color: #fff;
-  background-color: #18123e;
-  padding: 0.75rem;
-  margin-left: 12px;
-  border-radius: 12px;
-  font-weight: 600;
-  visibility: hidden;
+  background: #33333333;
+  border: 2px solid #333333aa;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.625rem;
 }
 
-.skills-container div:hover {
-  transform: scale(1.1);
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  filter: drop-shadow(#666 25px 25px 5px);
+.card-projeto:hover .project-message {
+  opacity: 100%;
+  transition: all 0.3s ease-in-out;
 }
-
-.skills-container div:hover img {
-  filter: none;
-}
-
-.skills-container div:hover p {
-  visibility: visible;
-}
-
-/* Fim da estilização das habilidades */
 
 /* ----------xxx---------- */
-
-/* Começo da estilizaçao do contato */
 
 .contato {
   height: auto;
@@ -809,35 +756,67 @@ span.color2 {
 
 .contato-social {
   cursor: url("assets/img/pointer.png"), auto;
-  border: 1px solid #ff426f;
-  border-radius: 1.125rem;
-  background: #f79eb3;
-  font-weight: 500;
-  height: 4.375rem;
-  margin: 0rem 0rem 1.875rem 0rem;
+  border: 2px solid #323232;
+  border-radius: .5rem;
   transition: all 0.3s ease-in-out;
+  width: 512px;
+  margin: 12px 0;
+  background-color: #18123e9f;
+  background-image: url(assets/img/Noisy.png);
+  background-size: cover no-repeat;
+  background-position: center center;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 1.25rem;
 }
 
-.icone {
+.contato-social .conteudo-contato {
   cursor: url("assets/img/pointer.png"), auto;
-  padding: 0rem 2.5rem;
-  box-sizing: border-box;
-  border-right: 1px solid #323232;
-  font-size: 1.5625rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 100%;
+  width: 100%;
+  padding: .75rem 1.75rem;
+  background: transparent;
+  border: transparent;
+  font-weight: 500;
 }
 
-.icone i {
+.contato-social .conteudo-contato button {
   cursor: url("assets/img/pointer.png"), auto;
+  background: transparent;
+  border: transparent;
 }
 
-.contato-social span {
+.contato-social .icone {
+  cursor: url("assets/img/pointer.png"), auto;
+  font-size: 1.5625rem;
+  height: 100%;
+  margin: .75rem 0;
+  padding: 0 .75rem;
+  background: transparent;
+  border: transparent;
+  border-left: #03000e 1px solid;
+}
+
+.fa-whatsapp {
+  color: #25d366;
+}
+
+.fa-envelope {
+  color: #e18000;
+}
+
+.contato-social .icone i {
+  cursor: url("assets/img/pointer.png"), auto;
+  font-weight: 700;
+}
+
+.contato-social p {
   cursor: url("assets/img/pointer.png"), auto;
   font-size: 1.25rem;
   z-index: 1000;
@@ -851,54 +830,14 @@ span.color2 {
   padding: 1.25rem 13.125rem;
 }
 
-.contato-social h5,
-.contato-social h6 {
-  cursor: url("assets/img/pointer.png"), auto;
-  position: absolute;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 800;
-  opacity: 0;
-  margin-left: 13.125rem;
-  font-size: 1.25rem;
-  letter-spacing: -0.2992px;
-}
-
-.contato-social h6 {
-  margin-left: 12.5rem;
-}
-
-.contato-social:hover {
-  transition: all 0.3s ease-in-out;
-  filter: drop-shadow(#666 0.9375rem 0.9375rem 0.3125rem);
-}
-
-.contato-social:hover span {
-  opacity: 0;
-}
-
-.contato-social:hover h5 {
-  opacity: 1;
-}
-
-.contato-social:active h5 {
-  display: none;
-}
-
-.contato-social:active h6 {
-  opacity: 1;
-  color: #7c7;
-}
-
-/* Fim da estilização do contato */
-
 /* ----------xxx---------- */
-
-/* Começo da estilização do footer */
 
 footer {
   margin-top: 6.25rem;
-  background: linear-gradient(-45deg, #18123ecc, #0a0722dd, #07051fee, #03000e);
+  background-color: #03000efa;
+  background-image: url(assets/img/Noisy.png);
+  background-size: cover no-repeat;
+  background-position: center center;
   height: auto;
 }
 
@@ -974,11 +913,13 @@ footer p a {
   color: #ff426f;
 }
 
-/* Fim da estilização do footer */
+.footer-mensagem {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+}
 
 /* ----------xxx---------- */
-
-/* Keyframes */
 
 @keyframes pisca {
   50% {
@@ -990,9 +931,16 @@ footer p a {
   }
 }
 
-/* ----------xxx---------- */
+@keyframes my-animation {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 0px;
+  }
+}
 
-/* Começo da responsividade */
+/* ----------xxx---------- */
 
 @media screen and (max-width: 1850px) {
   .sobre-img img {
@@ -1001,24 +949,6 @@ footer p a {
 
   .box-conteudo-bottom {
     margin: -7.5rem 0rem 0rem 31.25rem;
-  }
-
-  .card-projeto {
-    margin: 1.25rem;
-    padding: 9.375rem;
-  }
-
-  .card_description {
-    margin: 0.625rem 0 1.5625rem;
-    font-size: 0.9375rem;
-  }
-
-  .card_content .skills {
-    margin-bottom: 2.1875rem;
-  }
-
-  .card_content a {
-    margin-left: 1.5625rem;
   }
 }
 
@@ -1041,19 +971,6 @@ footer p a {
   .sobre-img img {
     height: 450px;
   }
-
-  .card_content a {
-    margin-left: 0.9375rem;
-  }
-
-  .card_description {
-    margin: 0.625rem 0 0.625rem;
-    font-size: 0.9375rem;
-  }
-
-  .card_content .skills {
-    margin-bottom: 1.25rem;
-  }
 }
 
 @media screen and (max-width: 1560px) {
@@ -1065,12 +982,9 @@ footer p a {
     margin: -3.125rem 0rem 0rem 26.875rem;
   }
 
-  .card_description {
-    margin: 0.625rem 0 0.625rem;
-  }
-
-  .card_content a {
-    margin-left: 0rem;
+  .projetos-cards {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 }
 
@@ -1105,27 +1019,8 @@ footer p a {
     margin: -4% 60% 0% 5%;
   }
 
-  .container-cards {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .card_content a {
-    margin-left: 2.1875rem;
-  }
-
-  .card_description {
-    margin: 0.625rem 0 1.5625rem;
-    font-size: 0.9375rem;
-  }
-
-  .card_content .skills {
-    margin-bottom: 2.8125rem;
-  }
-}
-
-@media screen and (max-width: 1270px) {
-  .skills-container {
-    grid-template-columns: 1fr 1fr 1fr;
+  .card-content .project-message {
+    display: none;
   }
 }
 
@@ -1172,12 +1067,12 @@ footer p a {
     font-size: 1.5625rem;
   }
 
-  .container-cards {
-    grid-template-columns: 1fr;
+  .card-projeto {
+    margin-left: 0px;
   }
-
-  .skills-container {
-    grid-template-columns: 1fr 1fr;
+  
+  .card-projeto .card-img {
+    display: none;
   }
 
   .img-contato img {
@@ -1199,6 +1094,10 @@ footer p a {
     text-align: center;
     margin: 0%;
     margin-top: 0.9375rem;
+  }
+
+  .aside-menu ul {
+    justify-content: center;
   }
 
   .logo {
@@ -1248,14 +1147,6 @@ footer p a {
     letter-spacing: 0.3125rem;
   }
 
-  .email {
-    padding: 1.25rem 40px;
-  }
-
-  .discord {
-    padding: 1.25rem 150px;
-  }
-
   .contato-social h5,
   .contato-social h6 {
     margin-left: 9.375rem;
@@ -1281,10 +1172,6 @@ footer p a {
     padding: 1.25rem 10px;
   }
 
-  .discord {
-    padding: 1.25rem 120px;
-  }
-
   .contato-social h5,
   .contato-social h6 {
     margin-left: 7.8125rem;
@@ -1302,25 +1189,13 @@ footer p a {
     letter-spacing: 0.1875rem;
   }
 
-  .container-cards {
-    grid-gap: 1.25rem 0rem;
-
-    max-width: 0rem;
-    padding-bottom: 2.5rem;
+  .card-projeto {
+    height: 20rem;
+    padding: 9.375rem 0rem;
   }
 
-  .habilidades {
-    height: auto;
-  }
-
-  .habilidades h2 {
-    font-size: 1.25rem;
-    max-width: 18.75rem;
-    letter-spacing: 0.125rem;
-  }
-
-  .skills-container {
-    grid-template-columns: 1fr;
+  .contato-social {
+    width: 100%;
   }
 
   .img-contato img {
@@ -1369,10 +1244,6 @@ footer p a {
   .contato-social span {
     font-size: 12px;
     letter-spacing: 0rem;
-  }
-
-  .discord {
-    padding: 1.25rem 3.75rem;
   }
 
   .contato-social h5,
@@ -1470,37 +1341,25 @@ footer p a {
   }
 
   .card-projeto {
-    width: 15rem;
+    height: 24rem;
+    padding: 200px 0rem;
   }
 
-  .card_title {
-    font-size: 1.25rem;
+  .contato-container {
+    gap: 0rem;
+    margin-left: -0.75rem;
   }
 
-  .card_description {
-    margin: 0.625rem 0 0.75rem;
-    font-size: 0.75rem;
+  .contato-conteudo {
+    scale: 0.8;
   }
+}
 
-  .card_content .skills {
-    font-size: 1.875rem;
-    margin-top: 1.875rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .card_content a {
-    margin-left: 0.3125rem;
-  }
-
-  .habilidades h2 {
-    font-size: 1.125rem;
-    max-width: 275px;
-    letter-spacing: 0.125rem;
+@media screen and (max-width: 360px) {
+  .contato-container {
+    margin-left: -2.5rem;
   }
 }
 
 @media screen and (max-width: 330px) {
-  .card-projeto:hover {
-    transform: scale(1.02);
-  }
 }
