@@ -3,6 +3,11 @@ window.addEventListener("scroll", function () {
   menu.classList.toggle("sticky", window.scrollY > 50);
 });
 
+window.addEventListener("scroll", function () {
+  let menu = document.querySelector(".btn-top");
+  menu.classList.toggle("btn-show", window.scrollY > 50);
+});
+
 document.getElementById("email").addEventListener("click", () => {
   let emailContent = document.getElementById("email").textContent;
   navigator.clipboard.writeText(emailContent);
