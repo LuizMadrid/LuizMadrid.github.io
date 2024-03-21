@@ -1045,7 +1045,7 @@ footer p a {
   }
 
   .sobre-mim-container {
-    padding-bottom: 68.75rem;
+    height: fit-content;
   }
 
   .box-conteudo-bottom {
@@ -1089,10 +1089,6 @@ footer p a {
 @media screen and (max-width: 950px) {
   .inicial {
     margin-top: 15.625rem;
-  }
-
-  .sobre-mim-container {
-    padding-bottom: 81.25rem;
   }
 
   .box-conteudo-bottom {
@@ -1205,10 +1201,6 @@ footer p a {
     margin: -7% 40% 0% 5%;
   }
 
-  .sobre-mim-container {
-    padding-bottom: 87.5rem;
-  }
-
   .background-box-2 h2 {
     letter-spacing: 0.3125rem;
   }
@@ -1257,6 +1249,10 @@ footer p a {
 
   .card-projeto {
     overflow: hidden;
+  }
+
+  .card-projeto-container:nth-child(1) {
+    border-top: 1px solid transparent;
   }
 
   .card-projeto .card-img {
@@ -1412,10 +1408,6 @@ footer p a {
     letter-spacing: 0.0625rem;
     font-size: 1rem;
     max-width: 18.125rem;
-  }
-
-  .sobre-mim-container {
-    padding-bottom: 93.75rem;
   }
 
   .box-conteudo-bottom div {
