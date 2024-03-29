@@ -179,6 +179,30 @@ span.color2 {
   cursor: url("assets/img/pointer.png"), auto;
 }
 
+#scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+
+  margin: 0 0 1.5rem 0;
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+#scroll-down i {
+  animation: scroll 1s infinite;
+  color: #323232;
+  font-size: 1.5rem;
+}
+
 /* ----------xxx---------- */
 
 .logo {
@@ -288,6 +312,10 @@ span.color2 {
   line-height: 2rem;
 }
 
+#Sobre-mim {
+  margin-top: 58.75rem;
+}
+
 .inicial h2 {
   color: #ececec;
   margin: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
@@ -298,7 +326,7 @@ span.color2 {
   background: linear-gradient(90deg, #9c4eff, #ff426f);
 }
 
-.social {
+.social .social-title {
   padding: 1.875rem 0rem 0rem 1.25rem;
   font-size: 1.875rem;
 }
@@ -309,24 +337,40 @@ span.color2 {
   text-decoration: none;
 }
 
-.social a:nth-child(1)::after {
+.social ul li {
+  list-style: none;
+}
+
+.social .social-footer a:nth-child(1)::after {
   content: "Meu Instagram";
 }
 
-.social a:nth-child(3)::after {
+.social .social-footer a:nth-child(3)::after {
   content: "Meu LinkedIn";
 }
 
-.social a:nth-child(5)::after {
+.social .social-footer a:nth-child(5)::after {
   content: "Meu GitHub";
 }
 
-.social-title:hover::after {
+.social .social-title a:nth-child(1)::after {
+  content: "Meu LinkedIn";
+}
+
+.social .social-title a:nth-child(3)::after {
+  content: "Meu GitHub";
+}
+
+.social .social-title a:nth-child(5)::after {
+  content: "Meu Currículo";
+}
+
+.social:hover::after {
   opacity: 1;
   display: block;
 }
 
-.social-title::after {
+.social::after {
   position: absolute;
   z-index: 15;
   width: 5.625rem;
@@ -1089,6 +1133,10 @@ footer p a {
 @media screen and (max-width: 950px) {
   .inicial {
     margin-top: 15.625rem;
+  }
+
+  #Sobre-mim {
+    margin-top: 5.625rem;
   }
 
   .box-conteudo-bottom {
