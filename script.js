@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
 });
 
 document.getElementById("email").addEventListener("click", () => {
-  let emailContent = document.getElementById("email").textContent;
+  let emailContent = document.getElementById("emailCopy").textContent;
   navigator.clipboard.writeText(emailContent);
 
   document.getElementById("email").style.display = "none";
@@ -25,7 +25,7 @@ document.getElementById("email").addEventListener("click", () => {
 });
 
 document.getElementById("whatsapp").addEventListener("click", () => {
-  let whatsappContent = document.getElementById("whatsapp").textContent;
+  let whatsappContent = document.getElementById("whatsappCopy").textContent;
   navigator.clipboard.writeText(whatsappContent);
 
   document.getElementById("whatsapp").style.display = "none";
